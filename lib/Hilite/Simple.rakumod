@@ -34,8 +34,8 @@ sub hilite(Str $source, Bool :$rakudoc) is export {
     $code = '<pre class="nohighlights">' ~ $code ~ '</pre>';
     $code = '<div class="raku-code"><div>' ~ $code ~ '</div></div>';
 
-    my $html = style-str(style-templ) ~ $code;
-    return inline-css($html);
+    my $html = style-str(style-templ) ~ $code.trim;
+    return inline-css($html).trim;
 }
 
 sub inline-css(Str $html is copy --> Str) {
