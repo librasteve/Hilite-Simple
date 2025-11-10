@@ -9,7 +9,7 @@ sub hilite(Str $source, Bool :$rakudoc) is export {
     if $rakudoc {
         $code = Rainbow::tokenize-rakudoc($source).map( -> $t {
             if $t.type.key ne 'TEXT' {
-                qq[<span class="rainbow-{$t.type.key.lc}">escape-html($t.text)}\</span>]
+                qq[<span class="rainbow-{$t.type.key.lc}">{escape-html($t.text)}\</span>]
             }
             else {
                 $t.text.subst(/ ' ' /, '&nbsp;',:g);
@@ -31,7 +31,7 @@ sub hilite(Str $source, Bool :$rakudoc) is export {
     $code .= subst( / \v /, '<br>', :g);
     $code .= subst( / "\t" /, '&nbsp' x 4, :g );
     $code .= trim;
-    $code = '<pre class="nohighlights">' ~ $code ~ '</pre>';
+    $code = '<pre class="nohighlights">'   ~ $code ~ '</pre>';
     $code = '<div class="raku-code"><div>' ~ $code ~ '</div></div>';
 
     my $html = style-str(style-templ) ~ $code.trim;
@@ -39,8 +39,6 @@ sub hilite(Str $source, Bool :$rakudoc) is export {
 }
 
 sub inline-css(Str $html is copy --> Str) {
-    # 0. Remove comments
-    $html = $html.lines.grep({ ! /\/\// }).join("\n");
 
     # 1. Extract <style> content
     my @styles = $html.match(/ '<style>' (.*?) '</style>' /, :g, :s)>>.[0].Str;
@@ -115,7 +113,6 @@ sub style-templ { q:to/END/;
       .raku-code {
         font-weight: 500;
 
-        // Exception: If inside .nohighlights, reset styles
         .nohighlights {
             background: none;
             color: inherit;
