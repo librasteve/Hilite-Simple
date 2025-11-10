@@ -1,13 +1,13 @@
 {
     "name": "Hilite::Simple",
     "description": "Simple HTML code highlighter for raku & rakudoc",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "authors": [
         "librasteve"
     ],
     "auth": "zef:librasteve",
     "depends": [
-        "HTML::Escape:ver<0.0.2>",
+        "HTML::Escape:ver<0.0.1>",
         "Rainbow:ver<0.3.0>:auth<zef:patrickb>"
     ],
     "build-depends": [],
