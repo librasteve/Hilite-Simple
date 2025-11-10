@@ -12,6 +12,15 @@ Currently, only the default color map is offered (as featured in raku.org).
 
 To get an HTML div that highlights raku:
 
+```bash
+> hilite myscript.raku > myscript.html
+
+Usage:
+  hilite [--output=<Str>] [--rakudoc] <source>
+```
+
+You can also use Hilite::Simple in a script like so:
+
 ```raku
 #!/usr/bin/env raku
 use v6.d;
