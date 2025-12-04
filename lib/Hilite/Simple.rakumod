@@ -29,7 +29,7 @@ sub hilite(Str $source, Bool :$rakudoc) is export {
 
     $code .= subst( / \v+ <?before $> /, '');
     $code .= subst( / \v /, '<br>', :g);
-    $code .= subst( / "\t" /, '&nbsp' x 4, :g );
+    $code .= subst( / "\t" /, '&nbsp;' x 4, :g );
     $code .= trim;
     $code = '<pre class="nohighlights" style="font-size: 1em; font-family: monospace">' ~ $code ~ '</pre>';
     $code = '<div class="raku-code"><div>' ~ $code ~ '</div></div>';
