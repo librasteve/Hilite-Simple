@@ -1,6 +1,0 @@
-use Test;
-use Hilite::Simple;
-
-pass "replace me";
-
-done-testing;
