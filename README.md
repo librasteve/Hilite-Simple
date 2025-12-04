@@ -2,7 +2,7 @@
 
 Hilite::Simple is an HTML code highlighter. It is a cut down version of the raku Hilite module (auth:finanalyst).
 
-Unlike Hilite, only raku (and rakudoc) highlighting is supported. Hilite::Simple avoids the use of <style>...</style> tags, external CSS files (eg styles.css), SASS and JavaScript - the output is provided as simple HTML with inline styling for copy pasta purposes. For example into the raw HTML widget offered by wordpress.com.
+Unlike Hilite, only raku (and rakudoc) highlighting is supported. Hilite::Simple avoids the use of <style>...</style> tags, external CSS files (eg styles.css), SASS and JavaScript - the output is provided as simple HTML with inline styling for copy pasta purposes. For example into the `Custom HTML` block provided on wordpress.com.
 
 Hilite::Simple employs the Rainbow raku highlighter module (auth:patrickbr) using RakuAST.
 
