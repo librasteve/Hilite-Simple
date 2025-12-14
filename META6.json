@@ -1,26 +1,24 @@
 {
-  "auth": "zef:librasteve",
-  "authors": [
-    "librasteve"
-  ],
-  "build-depends": [
-  ],
-  "depends": [
-    "HTML::Escape:ver<0.0.1>",
-    "Rainbow:ver<0.3.0>:auth<zef:patrickb>"
-  ],
-  "description": "Simple HTML code highlighter for raku & rakudoc",
-  "license": "Artistic-2.0",
-  "name": "Hilite::Simple",
-  "provides": {
-    "Hilite::Simple": "lib/Hilite/Simple.rakumod"
-  },
-  "resources": [
-  ],
-  "source-url": "https://github.com/librasteve/Hilite-Simple.git",
-  "tags": [
-  ],
-  "test-depends": [
-  ],
-  "version": "0.0.5"
+    "name": "Hilite::Simple",
+    "description": "Simple HTML code highlighter for raku & rakudoc with multiple highlight themes",
+    "version": "0.0.6",
+    "authors": [
+        "librasteve",
+        "antononcube"
+    ],
+    "auth": "zef:librasteve",
+    "depends": [
+        "HTML::Escape:ver<0.0.1>",
+        "JSON::Fast:ver<0.19+>",
+        "Rainbow:ver<0.3.0>:auth<zef:patrickb>"
+    ],
+    "build-depends": [],
+    "provides": {
+        "Hilite::Simple": "lib/Hilite/Simple.rakumod"
+    },
+    "resources": [
+        "themes.json"
+    ],
+    "license": "Artistic-2.0",
+    "source-url": "https://github.com/librasteve/Hilite-Simple.git"
 }
