@@ -1,6 +1,26 @@
 use Test;
 use Hilite::Simple;
 
-pass "replace me";
+my $source = q:to/END/;
+    sub greet(Str $name) {      # Strictly typed
+        say "Hello, $name!"
+    }
+    my $user = "Alice";         # Untyped (dynamic)
+    greet($user);               # Works fine
+
+    my Int $age = 30;           # Strict Int
+    my $info = "Age: $age";     # Dynamic string interpolation
+    say $info;
+    END
+
+ok hilite($source, theme => 'dark');
+
+ok hilite($source, theme => 'dark', background => '#1F1F1F');
+
+ok highlight-code($source, theme => 'dark');
+
+ok hilite-themes();
+
+ok highlight-code-themes();
 
 done-testing;
