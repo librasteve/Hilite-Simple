@@ -1,6 +1,12 @@
 Revision history for Hilite::Simple
 
 {{$NEXT}}
+0.0.6  2025-12-14
+    - Multiple highlight themes are available
+        - Refactoring to using resources JSON file for the highlight themes specifications.
+    - Added the option :background for &hilite that overrides theme's color.
+    - Added proper spelling synonym &highlight-code.
+    - Added &hilite-themes and its proper spelling synonym &highlight-code-themes.
 
 0.0.5  2025-12-04T17:57:30Z
     - Turn widget to block
