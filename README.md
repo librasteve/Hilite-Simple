@@ -41,6 +41,20 @@ my $source = q:to/END/;
 say hilite($source);
 ```
 
+Here a synonym of `hilite` is together with theme and background specs:
+
+```raku
+highlight-code($source, theme => 'solarized-dark') #background => '#1F1F1F');
+```
+
+See all available highlight themes with
+
+```raku
+hilite-themes
+```
+
+(Or use `highlight-code-themes`.)
+
 ## AUTHOR
 
 Steve Roe (aka librasteve)
