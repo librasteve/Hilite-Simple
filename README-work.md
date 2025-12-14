@@ -21,20 +21,10 @@ Here is CLI's usage message:
 ```shell
 hilite --help
 ```
-```
-# Usage:
-#   hilite.raku <source> [--output=<Str>] [--rakudoc] [--theme=<Str>] [-b|--background|--background-color=<Str>]
-#   
-#     <source>                                    input filename
-#     --output=<Str>                              optional output filename
-#     --rakudoc                                   optional flag [default: False]
-#     --theme=<Str>                               highlight theme [default: 'dark']
-#     -b|--background|--background-color=<Str>    background color
-```
 
 You can also use Hilite::Simple in a script like so:
 
-```raku
+```raku, results=asis
 use Hilite::Simple;
 
 my $source = q:to/END/;
@@ -52,20 +42,16 @@ my $source = q:to/END/;
 say hilite($source);
 ```
 
-
 Here a synonym of `hilite` is together with theme and background specs:
 
-```raku
-highlight-code($source, theme => 'solarized-dark', background => '#1F1F1F');
+```raku, results=asis
+highlight-code($source, theme => 'solarized-dark') #background => '#1F1F1F');
 ```
 
 See all available highlight themes with
 
 ```raku
 hilite-themes
-```
-```
-# (dark light solarized-dark solarized-light vscode-dark vscode-light)
 ```
 
 (Or use `highlight-code-themes`.)

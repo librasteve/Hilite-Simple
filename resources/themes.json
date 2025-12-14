@@ -1,0 +1,148 @@
+{
+  "default_theme": "dark",
+  "themes": {
+    "dark": {
+      "background": "#0f111a",
+      "colors": {
+        "scalar": "#2458a2",
+        "array": "#B01030",
+        "hash": "#00a693",
+        "code": "#209cee",
+        "keyword": "#008c7e",
+        "operator": "#1ca24f",
+        "type": "#d12c4c",
+        "routine": "#489fdc",
+        "string": "#369ec6",
+        "string-delimiter": "#1d90d2",
+        "escape": "#2b2b2b",
+        "text": "#2a2a2a",
+        "comment": "#4aa36c",
+        "regex-special": "#00996f",
+        "regex-literal": "#a52a2a",
+        "regex-delimiter": "#aa00aa",
+        "doc-text": "#2b9e71",
+        "doc-markup": "#d02b4c"
+      }
+    },
+
+    "light": {
+      "background": "#ffffff",
+      "colors": {
+        "scalar": "#1f4fa3",
+        "array": "#9c0d28",
+        "hash": "#007f6d",
+        "code": "#1c7fd0",
+        "keyword": "#006b60",
+        "operator": "#168a43",
+        "type": "#b01f3e",
+        "routine": "#3c7fc0",
+        "string": "#2f7fa6",
+        "string-delimiter": "#1a6fb8",
+        "escape": "#555555",
+        "text": "#000000",
+        "comment": "#3b7f57",
+        "regex-special": "#007a59",
+        "regex-literal": "#8b1f1f",
+        "regex-delimiter": "#7a007a",
+        "doc-text": "#2a7f5c",
+        "doc-markup": "#b01f3e"
+      }
+    },
+
+    "vscode-dark": {
+      "background": "#1e1e1e",
+      "colors": {
+        "scalar": "#569CD6",
+        "array": "#C586C0",
+        "hash": "#4EC9B0",
+        "code": "#DCDCAA",
+        "keyword": "#C586C0",
+        "operator": "#D4D4D4",
+        "type": "#4EC9B0",
+        "routine": "#DCDCAA",
+        "string": "#CE9178",
+        "string-delimiter": "#CE9178",
+        "escape": "#D7BA7D",
+        "text": "#D4D4D4",
+        "comment": "#6A9955",
+        "regex-special": "#D16969",
+        "regex-literal": "#CE9178",
+        "regex-delimiter": "#D16969",
+        "doc-text": "#6A9955",
+        "doc-markup": "#569CD6"
+      }
+    },
+
+    "vscode-light": {
+      "background": "#ffffff",
+      "colors": {
+        "scalar": "#0451A5",
+        "array": "#AF00DB",
+        "hash": "#267F99",
+        "code": "#795E26",
+        "keyword": "#0000FF",
+        "operator": "#000000",
+        "type": "#267F99",
+        "routine": "#795E26",
+        "string": "#A31515",
+        "string-delimiter": "#A31515",
+        "escape": "#811F3F",
+        "text": "#000000",
+        "comment": "#008000",
+        "regex-special": "#811F3F",
+        "regex-literal": "#A31515",
+        "regex-delimiter": "#811F3F",
+        "doc-text": "#008000",
+        "doc-markup": "#0451A5"
+      }
+    },
+
+    "solarized-dark": {
+      "background": "#002b36",
+      "colors": {
+        "scalar": "#268bd2",
+        "array": "#d33682",
+        "hash": "#2aa198",
+        "code": "#b58900",
+        "keyword": "#859900",
+        "operator": "#93a1a1",
+        "type": "#6c71c4",
+        "routine": "#b58900",
+        "string": "#2aa198",
+        "string-delimiter": "#2aa198",
+        "escape": "#cb4b16",
+        "text": "#839496",
+        "comment": "#586e75",
+        "regex-special": "#dc322f",
+        "regex-literal": "#2aa198",
+        "regex-delimiter": "#d33682",
+        "doc-text": "#586e75",
+        "doc-markup": "#268bd2"
+      }
+    },
+
+    "solarized-light": {
+      "background": "#fdf6e3",
+      "colors": {
+        "scalar": "#268bd2",
+        "array": "#d33682",
+        "hash": "#2aa198",
+        "code": "#b58900",
+        "keyword": "#859900",
+        "operator": "#657b83",
+        "type": "#6c71c4",
+        "routine": "#b58900",
+        "string": "#2aa198",
+        "string-delimiter": "#2aa198",
+        "escape": "#cb4b16",
+        "text": "#073642",
+        "comment": "#93a1a1",
+        "regex-special": "#dc322f",
+        "regex-literal": "#2aa198",
+        "regex-delimiter": "#d33682",
+        "doc-text": "#93a1a1",
+        "doc-markup": "#268bd2"
+      }
+    }
+  }
+}
